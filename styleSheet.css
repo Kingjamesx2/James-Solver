@@ -1,0 +1,606 @@
+/* James Faber, Hector Castellanos, Daniel Garcia */
+
+
+
+
+body
+{
+    background-color: aliceblue;
+    padding: 0px;
+    margin: 0px;
+    animation: transitionIn 2s;
+    font-family:cursive;
+}
+
+@keyframes transitionIn
+{
+    from
+    {
+        opacity: 0;
+        transform: rotateX(-10deg);
+    }
+
+    to 
+    {
+        opacity: 1;
+        transform: rotate(0);
+    }
+
+}
+/* Login  and sign up Page Designs */
+
+.LoginInfo
+{
+    background-image: url(./images/MathBackgroundTwo.jpeg);   
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.loginPage
+{
+    background-color: rgb(255, 181, 181);
+    margin: auto;
+    width: 300px;
+    height: 455px;
+    padding: 10px;
+    text-align: center;
+    margin-top: 150px;
+    border-radius: 30px;
+    box-shadow: 5px 5px 10px rgb(92, 90, 90);
+}
+
+#textbox
+{
+    border-radius: 30px;
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    margin-top: 20px;
+
+}
+
+#textbox:hover
+{
+    background-color: #9ff4ff;
+}
+
+#textbox:active
+{
+    background-color: #9ff4ff;
+    transform:translateY(1px);
+
+}
+
+#loginButton
+{
+    border-radius: 30px;
+    width: 200px;
+    height: 40px;
+    background-color: rgb(149, 241, 248);
+    margin-top: 20px;
+
+}
+
+#loginButton:hover
+{
+    background-color: #26b4be;
+}
+
+#loginButton:active
+{
+    background-color: #26b4be;
+    transform:translateY(1px);
+}
+
+#SignupButton
+{
+    border-radius: 30px;
+    width: 200px;
+    height: 40px;
+    background-color: rgb(253, 255, 136);
+    margin-top: 20px;
+
+}
+
+#SignupButton:hover
+{
+    background-color: #d3e012;
+
+}
+#SignupButton:active
+{
+    background-color: #d3e012;
+    transform:translateY(1px);
+}
+
+/* Welcome Page for Solver */
+
+.LevelBar
+{
+    background-color: rgba(200, 200, 206, 0.452);
+    width: 200px;
+    border: solid;
+    border-radius: 20px;
+    padding-left: 20px;
+    box-shadow: 5px 5px 10px rgb(92, 90, 90);
+    margin-left: 10px;
+    margin-top: 10px;
+
+    
+}
+
+.userPic
+{
+    float: left;
+    margin-top: 20px;
+    margin-right:20px;
+    text-align: center;
+}
+
+.userPic img
+{
+    border-radius: 100%;
+}
+
+.WelcomeInfo
+{
+    background-image: url(./images/MathBackgroundThree.jpeg);   
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 120% 120%;
+}
+
+span
+{
+    margin-left: 10px;
+}
+
+.WelcomePage
+{
+    margin: auto;
+    width: 300px;
+    height: 350px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 30px;
+}
+
+#chatBox
+{
+    /* float: right; */
+    padding: 0px;
+    margin: 0px;
+    width: 5%;
+    height: 15%;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    position: absolute;
+    left: 1298px;
+    top: 300px;
+}
+
+/* Ranking PAge and History page */
+.SolverTable
+{
+    margin: auto;
+    margin-top: -50;
+    width: 500px;
+    padding: 20px;
+    text-align: center;
+}
+
+.SolverTable table
+{
+    width: 500px;
+    margin: auto;
+    border: solid;
+}
+
+.SolverTable table th
+{
+    text-align: left;
+}
+
+.SolverTable table, th, td
+{
+    border: 1px solid black;
+    border-collapse: collapse ;
+}
+
+.SolverTable th, td
+{
+    padding: 10px;
+}
+
+.SolverTable tr:nth-child(odd)
+{
+    background-color: cadetblue;
+}
+
+
+
+/* Select Topic Page */
+
+.solverCards
+{
+    /* border: 1px solid; */
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr);
+    width: fit-content;
+    margin: auto;
+}
+
+
+.card
+{
+    background-color: antiquewhite;
+    width: 250px;
+    margin: auto;
+    float: left; 
+    margin: 20px;
+    padding-bottom: 10px; 
+    box-shadow: 5px 5px 5px gray;
+    border-radius: 25px;
+    border: 1px solid black;
+}
+ 
+.card:hover
+{
+    animation: effect 1s;
+
+}
+
+@keyframes effect
+{
+    from
+    {
+        
+        transform: scale(1);
+    }
+
+    to 
+    {
+        
+        transform: scale(1.1);
+    }
+
+}
+
+.card img
+{
+    border-radius: 25px;
+
+}
+.cardInfo
+{
+     text-align: center; 
+}
+
+/* Choose Quiz page */
+
+/* ---------------Quiz Page------------------- */
+
+.Quiztime
+{
+    background-color: honeydew;
+    width: fit-content;
+   float: right;
+   margin: 0%;
+   padding: 0%;
+}
+
+.QuizBackground
+{
+    background-color: rgba(194, 192, 192, 0.767);
+    padding: 10px;
+    margin: 10px;
+    width:500px;
+    margin: auto;
+}
+
+.QuizQuestions
+{
+    background-color: honeydew;
+    padding: px;
+    margin: 30px 0 20px 0;
+    padding: 0 0 20px;
+    text-align: center;
+}
+
+.QuizQuestions button
+{
+    margin: 10px;
+    border-radius: 25px;
+    width: 70px;
+}
+
+
+.QuizQuestions h3
+{
+    background-color: rgb(190, 190, 190);
+    width: fit-content;
+}
+
+#finishButton
+{
+    width: 450px;
+    border-radius: 50px;
+    height: 50px;
+    margin-left: 25px;
+    background-color: rgb(17, 175, 51);
+}
+
+
+/* Alert  */
+#customAlert
+{
+    display: none; 
+    position: fixed;
+    top: 0;
+    left:0;
+    right:0;
+    bottom:0;
+    z-index: 999;
+    background-color: rgba(202, 198, 192, 0.75);
+}
+
+#box
+{
+    border-radius: 5px;
+    margin-top:100px;
+    margin-left: 440px;
+    height:150px;
+    width:500px;
+    text-align: center;
+    box-shadow: 2px 2px 8px black;
+    background-color :blanchedalmond;
+}
+
+.heading
+{
+    background-color: cadetblue;
+    color: white;
+    font-size: larger;
+    padding: 5px;
+}
+
+.content
+{
+    margin-top: 30px;
+}
+
+#confirmBtn
+{
+    height: 25px;
+    width: 80px;
+    border-radius: 8px;
+    background-color: rgb(212, 66, 29);
+    color: azure;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 400px;
+}
+
+#confirmBtn1
+{
+    height: 25px;
+    width: 80px;
+    border-radius: 8px;
+    background-color: cadetblue;
+    color: azure;
+    cursor: pointer;
+    margin-top: -25px;
+    margin-left: 200px;
+}
+
+/* Results Page */
+
+.resultQuestions
+{
+    border: 1px solid black;
+    width: 900px;
+    margin: 20px auto ;
+    background-color: honeydew;
+    padding: 0 0 10px 20px;
+}
+
+.resultQuestions button
+{
+    border-radius: 25px;
+    width: 70px;
+}
+
+/* .resultExplanation
+{
+    
+}
+
+.resultLink
+{
+}
+
+.resultGrid
+{
+   
+} */
+
+
+
+
+/* Media Queries */
+@media screen and (max-width: 700px)
+{
+    .loginPage
+    {
+        margin-top: 100px;
+    }
+
+    .WelcomeInfo
+    {
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: 100% 100%;
+        width: fit-content;
+    }
+
+    .WelcomePage
+    {
+        width: 0px;
+        margin: auto;
+    }
+    
+    #chatBox
+    {
+        width: 50px;
+        position: absolute;
+        left: 370px;
+        top: 300px;
+    }
+
+    .SolverTable
+    {
+        width: fit-content;
+        margin-top: auto;
+    }
+
+    .SolverTable table
+    {
+        width: 300px;
+        margin: auto;
+    }
+
+    .solverCards
+    {
+        display: grid; 
+        grid-template-columns: repeat(1, 1fr);
+        width: fit-content;
+        margin: auto ;
+    }
+
+    .QuizBackground
+    {
+        width: 300px;
+        margin: 25px;
+    }
+
+    #finishButton
+    {
+        width: 200px;
+        margin-left: 45px;
+    }
+
+    #box
+    {
+        margin-top:100px;
+        margin-left: 35px;
+        width:300px;
+    }
+
+
+    #confirmBtn
+    {  
+        margin-top: 10px;
+        margin-left: 20px;
+    }
+
+    #confirmBtn1
+    {
+        margin-top: -25px;
+        margin-left: 20px;
+    }
+
+    .resultQuestions
+    {
+        width: 300px;
+        margin-left: 20px;
+        background-color: honeydew;
+        padding: 0 20px 10px 20px;
+    }
+} 
+
+ @media screen and (max-width: 900px)
+{
+    .loginPage
+    {
+        margin: auto;
+        width: 450px;
+        height: 555px;
+        padding: 20px;
+        margin-top: 50px;   
+    }
+
+    .WelcomeInfo
+    {
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: 100% 100%;
+        width: 500px;
+    }
+
+    .WelcomePage
+    {
+        height: 500px;
+        margin: 100px 0 0 200px;
+
+    }
+
+    #chatBox
+    {
+        width: 50px;
+        position: absolute;
+        left: 720px;
+        top: 300px;
+    }
+
+    .SolverTable
+    {
+        width: fit-content;
+        margin-top: auto;   
+    }
+
+    .SolverTable table
+    {
+        width: 600px;
+        margin: auto;
+    }
+
+    .solverCards
+    {
+        display: grid; 
+        grid-template-columns: repeat(2, 1fr);
+        width: fit-content;
+        margin: 20px 0 0 100px;
+    }
+
+    .QuizBackground
+    {
+        width: 700px;
+        margin: 25px;
+    }
+
+    #finishButton
+    {
+        width: 200px;
+        margin-left: 250px;
+    }
+
+    #box
+    {
+        margin-top:100px;
+        margin-left: 150px;
+        width: 500px;
+    }
+
+    .resultQuestions
+    {
+        width: 700px;
+        margin: 10px;
+        background-color: honeydew;
+        padding: 0 20px 10px 20px;
+    }
+}
